@@ -1,0 +1,192 @@
+# Page settings
+baseurl = "https://varshags.github.io/"
+languageCode = "en-us"
+title = "Varsha GS"
+theme = "hugo-orbit-theme"
+googleAnalytics = "UA-XXXXXXX-Y"
+
+# Do not build files for websites. Need them? Set to false
+disableRSS = true
+disableSitemap = true
+disable404 = true
+
+[params]
+# Meta
+    description = "My Resume;akka Confession of a code-aholic"
+    author = "Varsha GS"
+
+# Theme styles
+    # The original template comes with 6 colour schemes. You may choose styles below.
+    # "styles.css", "styles-2.css", "styles-3.css", "styles-4.css", "styles-5.css", "styles-6.css"
+    # are available. Also the source LESS files are included so
+    # it’s quick and easy to change the styling and colour scheme.
+    styles = "styles-6.css"
+
+# Sidebar sections
+
+    # Profile section
+    [params.profile]
+        name = "Varsha"
+        tagline = "Software Development Engineer"
+        avatar = "profile.png"
+
+    # Contact section
+    [params.contact]
+        enable = true
+
+        [[params.contact.list]]
+        class = "email"
+        icon = "fa-envelope"
+        url = "mailto:varshasatheesan@gmail.com"
+        title = "varshasatheesan@gmail.com"
+
+        [[params.contact.list]]
+        class = "phone"
+        icon = "fa-phone"
+        url = "tel:+917994553739"
+        title = "+917994553739"
+
+        [[params.contact.list]]
+        class = "linkedin"
+        icon = "fa-linkedin"
+        url = "//www.linkedin.com/in/varsha-gs-8ab28868"
+        title = "linkedin.com/in/sarathsp"
+
+        [[params.contact.list]]
+        class = "github"
+        icon = "fa-github"
+        url = "//github.com/varshags"
+        title = "github.com/varshags"
+
+    # Education section
+    [params.education]
+        enable = true
+        title = "Education"
+
+        [[params.education.list]]
+        degree = "B.Tech Computer Science and Engineering"
+        college = "University of Kerala"
+        dates = "2009 - 2013"
+
+        [[params.education.list]]
+        degree = "B.Tech Computer Science and Engineering"
+        college = "University of Kerala"
+        dates = "2014 - 2016"
+
+    # Languages section
+    [params.languages]
+        enable = true
+        title = "Languages"
+
+        [[params.languages.list]]
+        language = "English"
+        level = "Professional"
+
+        [[params.languages.list]]
+        language = "Malayalam"
+        level = "Native"
+
+        [[params.languages.list]]
+        language = "Hindi"
+        level = "Professional"
+
+    # Interests section
+    [params.interests]
+        enable = false
+        title = "Interests"
+
+        [[params.interests.list]]
+        interest = "Travelling"
+
+        [[params.interests.list]]
+        interest = "Coding"
+
+# Main body sections Summary section
+    [params.summary]
+        enable = true
+        icon = "fa-user"
+        title = "Career Profile"
+        summary = "To build a challenging career in the software field by utilizing my skills and contributing towards the goals of the company. To constantly upgrade my knowledge and skills and make difference in whatever I do."
+
+    # Experiences section
+    [params.experiences]
+        enable = false
+        icon = "fa-briefcase"
+        title = "Experiences"
+
+        [[params.jobs.list]]
+        position = "Software Engineer / Enterprise Solutions"
+        dates = "2016 - Presemt"
+        company = "Exotel, Banglore"
+        details = "Improved php Services performance by 40% tweaking system configurations,Contributed to opensource projects like [aerospike-go-client](https://github.com/aerospike/aerospike-client-go),"
+        
+        [[params.jobs.list]]
+        position = "Software Engineer / Backend Services"
+        dates = "2015 - 2016"
+        company = "Exotel, Banglore"
+        details = "Involved Re-disigning the entire stack in [go](https://golang.org) ,this includes re-design and re-thinking of the architecture to scale for the global market with  HA,Efficiency etc"
+
+        [[params.jobs.list]]
+        position = "Software Engineer / Full Stack Developer"
+        dates = "2014 - 2015"
+        company = "Exotel, Bangalore"
+        details = "Written libraries for the Exotl API,Improved user experiance adding UI features"
+
+        [[params.jobs.list]]
+        position = "ASE"
+        dates = "2013 - 2014"
+        company = "TCS, Chennai"
+        details = "Besides the routine job,written REXX Cobol parsing tool and VBScripts for improving project rule extraction"
+
+
+    # Projects section
+    [params.projects]
+        enable = true
+        icon = "fa-archive"
+        title = "Projects"
+        intro = "List of recent projects that i am proud of "
+
+        [[params.projects.list]]
+        title = "An Automated Coin Recognition System Using GLCM"
+        tagline = "The aim of the project is to build a coin recognition system using Grey Level Cooccurrence Matrix(GLCM). A camera is used to capture the images of the coins. GLCM features are extracted from the captured image and a feature vector is generated. This feature vector is fed as input to an Artificial Neural Network which is trained to recognize the coins."
+
+        [[params.projects.list]]
+        title = "An Automated Coin Recognition System using Circlet Transform"
+        tagline = "The main aim of the project was to build a coin recognition system to recognize Indian denomination coins using Circlet transform. The image of the coin was captured using a camera and Circlet transform was applied on these images to identify the circles. From these circles the GLCM features were extracted and a feature vector was generated which was used to train an Artificial Neural Network to recognize the coins."
+
+    # Projects section
+    [params.publications]
+        enable = true
+        icon = "fa-newspaper-o"
+        title = "Certifications"
+        intro = ""
+
+        [[params.publications.list]]
+        title = "Software Testing Course in manual and automation from STC."
+        tagline = "Software Testing Course in manual and automation from STC."
+    
+    # Skills section
+    [params.skills]
+        enable = true
+        icon = "fa-rocket"
+        title = "Skills & Proficiency"
+
+        [[params.skills.list]]
+        skill = "QC"
+        level = "98%"
+                
+        [[params.skills.list]]
+        skill = "QTP, Silk Test,Rational Robot, Load Runner, Selenium."
+        level = "90%"
+
+    # Footer section
+
+    # The original template is released under the Creative Commons Attribution 3.0 License.
+    # Please keep the original attribution link when using for your own project.
+    # If you'd like to use the template without the attribution,
+    # you can check out other license options via template author's website: themes.3rdwavemedia.com
+    # 
+    # As for Hugo port you may rewrite the "Ported for..." line with setting your name below.
+
+    [params.footer]
+        copyright = "Ported for Varsha"
